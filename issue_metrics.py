@@ -101,6 +101,7 @@ def search_issues(
 
     # Print the issue titles
     try:
+        print("PRINTING ISSUE TITLES")
         for idx, issue in enumerate(issues_iterator, 1):
             print(issue.title)  # type: ignore
             issues.append(issue)
