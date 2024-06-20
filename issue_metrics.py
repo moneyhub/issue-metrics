@@ -217,8 +217,8 @@ def get_per_issue_metrics(
             pull_request, ready_for_review_at = None, None
             if issue.issue.pull_request_urls:  # type: ignore
                 pull_request = issue.issue.pull_request()  # type: ignore
-                print(issue.issue["title"])
-                print(issue.issue["url"])
+                print(issue.issue.title)
+                print(issue.issue.url)
                 ready_for_review_at = get_time_to_ready_for_review(issue, pull_request)
 
             if env_vars.hide_time_to_first_response is False:
