@@ -164,7 +164,7 @@ def get_per_issue_metrics(
     issues_with_metrics = []
     num_issues_open = 0
     num_issues_closed = 0
-
+    print("INSIDE GET PER")
     for issue in issues:
         if discussions:
             issue_with_metrics = IssueWithMetrics(
