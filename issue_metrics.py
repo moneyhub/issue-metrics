@@ -300,7 +300,7 @@ def main():
         ValueError: If the SEARCH_QUERY environment variable is not set.
         ValueError: If the search query does not include a repository owner and name.
     """
-
+    print("??????")
     print("Starting issue-metrics search...")
 
     # Get the environment variables for use in the script
